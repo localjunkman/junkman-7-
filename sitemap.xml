@@ -61,12 +61,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.localjunkman.org/locations/</loc>
-    <lastmod>2026-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.localjunkman.org/locations/carlsbad/</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
