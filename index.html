@@ -372,27 +372,58 @@
 
 
 
+<style>
+  .two-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .two-photo-grid .g-item {
+    overflow: hidden;
+    border-radius: var(--r-lg);
+  }
+
+  .two-photo-grid .g-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--r-lg);
+  }
+
+  @media (max-width: 760px) {
+    .two-photo-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .two-photo-grid .g-item img {
+      min-height: 280px;
+    }
+  }
+</style>
+
 <section class="section" style="background:var(--gray-50);border-top:1px solid var(--gray-200)" id="gallery">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Real work, real results</p>
-    <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:.02em;color:var(--ink);margin-bottom:28px">Before &amp; After — Real Jobs Across San Diego County.</h2>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:.02em;color:var(--ink);margin-bottom:28px">
+        Before &amp; After — Real Jobs Across San Diego County.
+      </h2>
     </div>
-    <div class="gallery-grid">
+
+    <div class="two-photo-grid">
       <div class="g-item">
         <img src="/assets/images/before_after_garage.jpg" alt="Garage cleanout before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
       </div>
+
       <div class="g-item">
         <img src="/assets/images/before_after_room.jpg" alt="Room and estate cleanout before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
       </div>
-      <div class="g-item">
-        <img src="/assets/images/before_after_yard.jpg" alt="Yard and patio debris removal before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
-      </div>
-      <div class="g-item">
-        <img src="/assets/images/before_after_curb.jpg" alt="Furniture and mattress removal before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
-      </div>
     </div>
-    <div style="text-align:center">
+
+    <div style="text-align:center;margin-top:28px">
       <a href="https://www.instagram.com/localjunkman/" target="_blank" rel="noopener" class="btn btn-outline">See More on Instagram</a>
     </div>
   </div>
@@ -401,23 +432,22 @@
 <section class="section" style="background:var(--white);border-top:1px solid var(--gray-200)" id="recent-jobs">
   <div class="container">
     <div class="section-header">
-      <p class="eyebrow">Recent Jobs</p>
-      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:.02em;color:var(--ink);margin-bottom:28px">More Real Local Junk Removal Jobs.</h2>
-      <p style="color:var(--gray-600);line-height:1.7;max-width:720px;margin:0 auto">Photos from actual junk removal pickups handled by Local JunkMan across San Diego County.</p>
+      <p class="eyebrow">More real local jobs</p>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:.02em;color:var(--ink);margin-bottom:28px">
+        More Before &amp; After Junk Removal Results.
+      </h2>
+      <p style="color:var(--gray-600);line-height:1.7;max-width:720px;margin:0 auto">
+        Actual cleanup photos from junk removal pickups handled by Local JunkMan across San Diego County.
+      </p>
     </div>
 
-    <div class="gallery-grid">
+    <div class="two-photo-grid">
       <div class="g-item">
-        <img src="/assets/images/job1.jpg" alt="Local JunkMan recent junk removal job in San Diego County" loading="lazy" width="900" height="675">
+        <img src="/assets/images/before_after_yard.jpg" alt="Yard and patio debris removal before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
       </div>
+
       <div class="g-item">
-        <img src="/assets/images/job2.jpg" alt="Local JunkMan hauling and cleanout job in San Diego County" loading="lazy" width="900" height="675">
-      </div>
-      <div class="g-item">
-        <img src="/assets/images/job3.jpg" alt="Recent junk pickup completed by Local JunkMan" loading="lazy" width="900" height="675">
-      </div>
-      <div class="g-item">
-        <img src="/assets/images/job4.jpg" alt="Local JunkMan junk removal truck and cleanup job" loading="lazy" width="900" height="675">
+        <img src="/assets/images/before_after_curb.jpg" alt="Furniture and mattress removal before and after — Local JunkMan San Diego" loading="lazy" width="900" height="675">
       </div>
     </div>
 
@@ -426,7 +456,6 @@
     </div>
   </div>
 </section>
-
 
 <section class="section" style="background:var(--white);border-top:1px solid var(--gray-200)" id="reviews">
   <div class="container">
